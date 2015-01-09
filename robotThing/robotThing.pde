@@ -1,11 +1,20 @@
+Robot XD001, XD002;
+
 void setup() {
   size(800, 700);
+  rectMode(CENTER);
+
+  XD001 = new Robot(100);
+  XD002 = new Robot(100);
+}
+
+void draw() {  
   background(0, 150, 150);
 
-translate(width/2, height/2);
-int wHead = 65;
-int hHead = 65;
-rectMode(CENTER);
-rect(0, -100, wHead, hHead, 12, 12, 12, 12);
+
+  XD002.drawRobot();
+  XD002.easeTowards(XD001.x, XD001.y);
+  XD001.drawRobot();
+  XD001.easeTowards(mouseX, mouseY);
 }
 
