@@ -4,10 +4,10 @@ int numberOfRobots = 50;
 void setup() {
   size(800, 700);
   rectMode(CENTER);
-  float headWidth = 50;
+  float headWidth = 100;
   for (int robotCtr = 0; robotCtr < numberOfRobots; ++robotCtr) {
     allMyLittleRobots.add(new Robot(headWidth, 0.1));
-    headWidth = headWidth - 1;
+    headWidth = headWidth - 2;
   }
 }
 
