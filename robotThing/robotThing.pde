@@ -16,7 +16,7 @@ void draw() {
 
   //ease towards previous robots
   Robot previousRobot = allMyLittleRobots.get(0);
-  previousRobot.easeTowards(mouseX, mouseY);
+  if(mousePressed)previousRobot.easeTowards(mouseX, mouseY);
   for (int robotCtr = 0; robotCtr < numberOfRobots; ++robotCtr) {
     Robot nextRobot = allMyLittleRobots.get(robotCtr);
     nextRobot.easeTowards(previousRobot.x, previousRobot.y);

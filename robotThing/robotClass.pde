@@ -1,7 +1,7 @@
 class Robot {
   float wHead = 50;
   float x, y;
-  float easing = 0.8;
+  float easing = 0.7;
   float alphaLevel = 100;
 
   Robot(float headWidth, float easing_) {
