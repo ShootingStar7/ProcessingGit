@@ -13,8 +13,6 @@ void draw() {
   sphere(radius);
 
 
- //
-    }
-  }
+  //
 }
 
